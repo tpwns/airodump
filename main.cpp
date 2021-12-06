@@ -109,7 +109,7 @@ int main(int argc, char* argv[]) {
 
 
     system("clear");
-    printf("[BSSID]                  [pwr]     [Beacons] [ESSID]             \n\n\n\n\n\n\n");
+    printf("[BSSID]                  [pwr]     [Beacons] [ESSID]             \n");
 
 	while (true) {
 		struct pcap_pkthdr* header;	//패킷 헤더를 담는 구조체
@@ -168,7 +168,6 @@ int main(int argc, char* argv[]) {
         m.unlock();
 
 
-        upLinePrompt(APMap.size());
         print_screen();
     }
 
